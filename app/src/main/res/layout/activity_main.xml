@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="check"
+            />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"
+            />
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"
+            />
+        <Button
+            android:id="@+id/button_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start tick"
+            />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"
+            />
+        <Button
+            android:id="@+id/button_reset_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset All"
+            />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"
+            />
+        <Button
+            android:id="@+id/button_save_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Log"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        tools:ignore="LabelFor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
